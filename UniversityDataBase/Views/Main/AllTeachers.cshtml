@@ -1,0 +1,65 @@
+@model IList<UniversityDataBase.Models.Teacher>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>All Teachers in University</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>All teachers table</h3>
+<div>
+    <table class="main_table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Sex</th>
+            <th>BirthDate</th>
+            <th>Age</th>
+            <th>Childs</th>
+            <th>Salary</th>
+            <th>Category</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Sex)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Birth)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Childs)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Salary)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Category)
+                </td>
+                <td>
+                    <a href="@Url.Action("Teacher", "Main", new {id = item.Id})">Edit</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<button class="main_button" onclick="document.location = '@Url.Action("Teacher", "Main",new {id = 0})'"> Add Teacher </button>
+</body>
+</html>

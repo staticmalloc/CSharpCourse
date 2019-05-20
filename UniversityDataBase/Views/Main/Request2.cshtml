@@ -1,0 +1,60 @@
+@model UniversityDataBase.Views.Main.Request2
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Request 2</title>
+</head>
+<body>
+<h3>Request 2</h3>
+
+<div>
+    <h4>By Cafedra</h4>
+    @using (Html.BeginForm("Req2_1", "Main", FormMethod.Post))
+    {
+        <div class="form" name = "bygroup" disabled>
+ 
+            <div class="input_group">
+                @Html.LabelFor(model => model.Cafedra, "The number of group")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Cafedra, ViewBag.cafedras as SelectList)
+                </div>
+            </div>
+        
+            <input class="main_button" type="submit" value="Select" />
+        </div>
+    }
+    <h4>By Faculty</h4>
+    @using (Html.BeginForm("Req2_2", "Main", FormMethod.Post))
+    {
+        <div class="form">
+
+            <div class="input_group">
+                @Html.LabelFor(model => model.Faculty, "Faculty")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Faculty, ViewBag.faculties as SelectList)
+                </div>
+            </div>
+
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+    <h4>By Category</h4>
+    @using (Html.BeginForm("Req2_3", "Main", FormMethod.Post))
+    {
+        <div class="form">
+
+            <div class="input_group">
+                @Html.LabelFor(model => model.Category, "Faculty")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Category, ViewBag.categories as SelectList)
+                </div>
+            </div>
+
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+</div>
+</body>
+</html>

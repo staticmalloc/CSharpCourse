@@ -1,0 +1,42 @@
+@model IList<UniversityDataBase.Models.Disertation>
+       
+       <!DOCTYPE html>
+       
+       <html>
+       <head>
+           <title>Request 3 by Cafedra</title>
+           <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+       </head>
+       <body>
+       <h3>Request 3 by Cafedra</h3>
+       <div>
+           <table class="main_table">
+               <thead>
+               <tr>
+                   <th>ID</th>
+                   <th>Theme</th>
+                   <th>Teacher</th>
+               </tr>
+               </thead>
+               <tbody>
+               @foreach (var item in Model)
+               {
+                   <tr>
+                       <td>
+                           @Html.DisplayFor(model => item.Id)
+                       </td>
+                       <td>
+                           @Html.DisplayFor(model => item.Theme)
+                       </td>
+                       <td>
+                           @Html.DisplayFor(model => item.Teacher.Name)
+                       </td>
+                   </tr>
+               }
+               </tbody>
+           </table>
+           <text>Number of disertations:</text>
+           @Html.DisplayFor(model=>model.Count)
+       </div>
+       </body>
+       </html>

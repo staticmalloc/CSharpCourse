@@ -1,0 +1,61 @@
+@model UniversityDataBase.Views.Main.Request5
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Request 5</title>
+</head>
+<body>
+<h3>Request 5</h3>
+
+<div>
+    <h4>By Group Number</h4>
+    @using (Html.BeginForm("Req5_1", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Discipline1, "Discipline")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Discipline1, ViewBag.disciplines as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Group, "The number of group")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Group, ViewBag.groups as SelectList)
+                </div>
+            </div>
+
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+    <h4>By Faculty and course</h4>
+    @using (Html.BeginForm("Req5_2", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Discipline2, "Discipline")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Discipline2, ViewBag.disciplines as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Faculty, "Faculty")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Faculty, ViewBag.faculties as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Course, "Course")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Course, ViewBag.courses as SelectList)
+                </div>
+            </div>
+
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+</div>
+</body>
+</html>

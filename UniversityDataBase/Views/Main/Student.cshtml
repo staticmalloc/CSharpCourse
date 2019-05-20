@@ -1,0 +1,65 @@
+@model UniversityDataBase.Models.Student
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Add Student</h3>
+@using (Html.BeginForm("UpdateStudent", "Main", FormMethod.Post))
+{
+    <div class="form">
+        @Html.HiddenFor(model => model.Id)
+        <div class="input_group">
+            @Html.LabelFor(model => model.Name, "Full Name")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Name)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Sex, "Sex(f or m)")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Sex)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Birth, "Date of Birth")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Birth)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Age, "Age")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Age)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Child, "Childs")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Child)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Award, "Award")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Award)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.GroupNum, "The number of group")
+            <div class="input_field">
+                @Html.DropDownListFor(model => model.GroupNum, ViewBag.groups as SelectList)
+            </div>
+        </div>
+        
+        <input class="main_button" type="submit" value="Отправить"/>
+    </div>
+}
+<button class="main_button" onclick="document.location = '@Url.Action("AllStudents")'">Назад</button>
+
+</body>
+</html>

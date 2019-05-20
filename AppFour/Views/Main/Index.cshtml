@@ -1,0 +1,42 @@
+﻿@model IList<AppFour.Entities.Worker>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Workers</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Workers</h3>
+<div>
+    <table class="main_table">
+        <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr onclick="document.location = '@Url.Action("Projects", "Main", new {id = item.Projects})'">
+
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+                <td>
+                    <a href="@Url.Action("Worker", "Main", new {id = item.WorkerId})">Edit</a>
+                    <a href="@Url.Action("RemoveWorker", "Main", new {id = item.WorkerId})">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <br/>
+    <button class="main_button" onclick="document.location = '@Url.Action("Worker", "Main", new {id = 0})'">Add Worker</button>
+    <button class="main_button" onclick="document.location = '@Url.Action("Project")'">Add Project</button>
+    <button class="main_button" onclick="document.location = '@Url.Action("Awards")'">See Awards</button>
+</div>
+</body>
+</html>

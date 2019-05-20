@@ -1,0 +1,72 @@
+@model UniversityDataBase.Views.Main.Request10
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Request 10</title>
+</head>
+<body>
+<h3>Request 10</h3>
+
+<div>
+    <h4>By group, teacher, discipline and semester</h4>
+    @using (Html.BeginForm("Req10_1", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Group1, "The number of group")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Group1, ViewBag.groups as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Teacher, "The number of group")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Teacher, ViewBag.teachers as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Discipline, "Discipline")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Discipline, ViewBag.disciplines as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Semester, "Semester")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Semester, ViewBag.semesters as SelectList)
+                </div>
+            </div>
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+    <h4>By group and Period</h4>
+    @using (Html.BeginForm("Req10_2", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Group2, "The number of group")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Group2, ViewBag.groups as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Begin, "Begin of period")
+                <div class="input_field">
+                    @Html.EditorFor(model => model.Begin)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.End, "End of period")
+                <div class="input_field">
+                    @Html.EditorFor(model => model.End)
+                </div>
+            </div>
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+
+</div>
+</body>
+</html>

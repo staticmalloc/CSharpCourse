@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\simonAsus\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\simonAsus\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_SharpCourse.-88353199.00" t="ExcludeRecursive" />
+    <e p="C:\Users\simonAsus\RiderProjects\SharpCourse" t="IncludeFlat">
+      <e p="AppFour" t="IncludeRecursive">
+        <e p="AppFour.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="MainController.cs" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="AppDBContext.cs" t="Include" />
+          <e p="Award.cs" t="Include" />
+          <e p="LoadData.cs" t="Include" />
+          <e p="Project.cs" t="Include" />
+          <e p="Worker.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20190507032327_Initialize.cs" t="Include" />
+          <e p="20190507032327_Initialize.Designer.cs" t="Include" />
+          <e p="20190507032519_Updatecolumn.cs" t="Include" />
+          <e p="20190507032519_Updatecolumn.Designer.cs" t="Include" />
+          <e p="AppDBContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="ErrorViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="AppFour.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Main" t="Include">
+            <e p="Awards.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="Project.cshtml" t="Include" />
+            <e p="Projects.cshtml" t="Include" />
+            <e p="Worker.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SharpCourse.sln" t="IncludeFlat" />
+      <e p="UniversityDataBase" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="MainController.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20190517064604_Init.cs" t="Include" />
+          <e p="20190517064604_Init.Designer.cs" t="Include" />
+          <e p="AppDBContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="AppDBContext.cs" t="Include" />
+          <e p="Cafedra.cs" t="Include" />
+          <e p="Diploma.cs" t="Include" />
+          <e p="Discipline.cs" t="Include" />
+          <e p="Disertation.cs" t="Include" />
+          <e p="ErrorViewModel.cs" t="Include" />
+          <e p="Faculty.cs" t="Include" />
+          <e p="FacultyCafedra.cs" t="Include" />
+          <e p="Group.cs" t="Include" />
+          <e p="GroupsDisciplines.cs" t="Include" />
+          <e p="Journal.cs" t="Include" />
+          <e p="LoadData.cs" t="Include" />
+          <e p="Session.cs" t="Include" />
+          <e p="Student.cs" t="Include" />
+          <e p="Teacher.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="UniversityDataBase.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="UniversityDataBase.csproj" t="IncludeRecursive" />
+        <e p="Views" t="Include">
+          <e p="Main" t="Include">
+            <e p="AllCafedras.cshtml" t="Include" />
+            <e p="AllStudents.cshtml" t="Include" />
+            <e p="AllTeachers.cshtml" t="Include" />
+            <e p="Cafedra.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="Req10_1.cshtml" t="Include" />
+            <e p="req10_2.cshtml" t="Include" />
+            <e p="req11_1.cshtml" t="Include" />
+            <e p="req11_2.cshtml" t="Include" />
+            <e p="req12_1.cshtml" t="Include" />
+            <e p="req12_2.cshtml" t="Include" />
+            <e p="req13_1.cshtml" t="Include" />
+            <e p="req13_2.cshtml" t="Include" />
+            <e p="req2_1.cshtml" t="Include" />
+            <e p="req2_2.cshtml" t="Include" />
+            <e p="req2_3.cshtml" t="Include" />
+            <e p="req3_1.cshtml" t="Include" />
+            <e p="req3_2.cshtml" t="Include" />
+            <e p="req4_1.cshtml" t="Include" />
+            <e p="req4_2.cshtml" t="Include" />
+            <e p="req4_3.cshtml" t="Include" />
+            <e p="Req5_1.cshtml" t="Include" />
+            <e p="Req5_2.cshtml" t="Include" />
+            <e p="Req6_1.cshtml" t="Include" />
+            <e p="Req6_2.cshtml" t="Include" />
+            <e p="Req6_3.cshtml" t="Include" />
+            <e p="req7.cshtml" t="Include" />
+            <e p="req8_1.cshtml" t="Include" />
+            <e p="req8_2.cshtml" t="Include" />
+            <e p="Request.cs" t="Include" />
+            <e p="Request1.cshtml" t="Include" />
+            <e p="Request10.cs" t="Include" />
+            <e p="Request10.cshtml" t="Include" />
+            <e p="Request11.cs" t="Include" />
+            <e p="Request11.cshtml" t="Include" />
+            <e p="Request11_1.cs" t="Include" />
+            <e p="Request12.cs" t="Include" />
+            <e p="Request12.cshtml" t="Include" />
+            <e p="Request13.cs" t="Include" />
+            <e p="Request13.cshtml" t="Include" />
+            <e p="Request13_1.cs" t="Include" />
+            <e p="Request1_1.cshtml" t="Include" />
+            <e p="Request1_2.cshtml" t="Include" />
+            <e p="Request2.cs" t="Include" />
+            <e p="Request2.cshtml" t="Include" />
+            <e p="Request3.cshtml" t="Include" />
+            <e p="Request4.cs" t="Include" />
+            <e p="Request4.cshtml" t="Include" />
+            <e p="Request5.cs" t="Include" />
+            <e p="Request5.cshtml" t="Include" />
+            <e p="Request6.cs" t="Include" />
+            <e p="Request6.cshtml" t="Include" />
+            <e p="Request7.cs" t="Include" />
+            <e p="Request7.cshtml" t="Include" />
+            <e p="Request8.cs" t="Include" />
+            <e p="Request8.cshtml" t="Include" />
+            <e p="Request9.cs" t="Include" />
+            <e p="Request9.cshtml" t="Include" />
+            <e p="Request9_1.cshtml" t="Include" />
+            <e p="Student.cshtml" t="Include" />
+            <e p="Teacher.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

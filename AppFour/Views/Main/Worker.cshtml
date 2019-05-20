@@ -1,0 +1,30 @@
+@model AppFour.Entities.Worker
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Workers</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Add Workers</h3>
+@using (Html.BeginForm("UpdateWorker", "Main", FormMethod.Post))
+{
+    <div class="form">
+        @Html.HiddenFor(model => model.WorkerId)
+        
+        <div class="input_group">
+            @Html.LabelFor(model => model.Name, "Full name")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Name)
+            </div>
+        </div>
+
+        </div>
+        <input class="main_button" type="submit" value="Send"/>
+}
+<button class="main_button" onclick="document.location = '@Url.Action("Index")'">Back</button>
+
+</body>
+</html>

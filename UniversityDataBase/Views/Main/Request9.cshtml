@@ -1,0 +1,40 @@
+@model UniversityDataBase.Views.Main.Request9
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Request 9</title>
+</head>
+<body>
+<h3>Request 9</h3>
+
+<div>
+    @using (Html.BeginForm("Request9_1", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Group, "The number of group")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Group, ViewBag.groups as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Discipline, "Discipline")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Discipline, ViewBag.disciplines as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Semester, "Semester")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Semester, ViewBag.semesters as SelectList)
+                </div>
+            </div>
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+
+</div>
+</body>
+</html>

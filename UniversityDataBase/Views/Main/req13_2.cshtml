@@ -1,0 +1,54 @@
+@model IList<UniversityDataBase.Views.Main.Request13_1>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Request 13 by Cafedra</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Request 13 by Cafedra</h3>
+<div>
+    <table class="main_table">
+        <thead>
+        <tr>
+            <th>Teacher Name</th>
+            <th>Discipline Name</th>
+            <th>All Hours</th>
+            <th>Lecture Hours</th>
+            <th>Seminar Hours</th>
+            <th>Practise Hours</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.TeacherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.DisciplineName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.AllHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.LectureHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.SeminarHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.PractiseHours)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <text>Number of students:</text>
+    @Html.DisplayFor(model=>model.Count)
+</div>
+</body>
+</html>

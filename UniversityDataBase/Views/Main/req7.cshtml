@@ -1,0 +1,32 @@
+@model IList<UniversityDataBase.Models.Student>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Request 7</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Request 7</h3>
+<div>
+    <table class="main_table">
+        <thead>
+        <tr>
+            <th>Full Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

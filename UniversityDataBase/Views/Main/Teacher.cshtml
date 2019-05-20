@@ -1,0 +1,77 @@
+@model UniversityDataBase.Models.Teacher
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add or Edit Teacher</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Add or Edit Teacher</h3>
+@using (Html.BeginForm("UpdateTeacher", "Main", FormMethod.Post))
+{
+    <div class="form">
+        @Html.HiddenFor(model => model.Id)
+        <div class="input_group">
+            @Html.LabelFor(model => model.Name, "Full Name")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Name)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Sex, "Sex(f or m)")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Sex)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Birth, "Date of Birth")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Birth)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Age, "Age")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Age)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Childs, "Childs")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Childs)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Salary, "Salary")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Salary)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.CafedraId, "Cafedra")
+            <div class="input_field">
+                @Html.DropDownListFor(model => model.CafedraId, ViewBag.cafedras as SelectList)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.FacultyId, "Faculty")
+            <div class="input_field">
+                @Html.DropDownListFor(model => model.FacultyId, ViewBag.faculties as SelectList)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Category, "Category")
+            <div class="input_field">
+                @Html.DropDownListFor(model => model.Category, ViewBag.categories as SelectList)
+            </div>
+        </div>
+        
+        <input class="main_button" type="submit" value="Отправить"/>
+    </div>
+}
+<button class="main_button" onclick="document.location = '@Url.Action("AllTeachers")'">Назад</button>
+
+</body>
+</html>

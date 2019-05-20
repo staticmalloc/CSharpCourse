@@ -1,0 +1,62 @@
+@model IList<UniversityDataBase.Models.Student>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Request 1 by Groups</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Request 1 by Groups</h3>
+<div>
+    <table class="main_table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Sex</th>
+            <th>BirthDate</th>
+            <th>Age</th>
+            <th>Childs</th>
+            <th>Avard</th>
+            <th>Group</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Sex)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Birth)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Child)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Award)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.GroupNum)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <text>Number of students:</text>
+    @Html.DisplayFor(model=>model.Count)
+</div>
+</body>
+</html>

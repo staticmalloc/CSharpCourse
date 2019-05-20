@@ -1,0 +1,41 @@
+@model IList<UniversityDataBase.Models.Cafedra>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>All Cafedras in University</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>All cafedras table</h3>
+<div>
+    <table class="main_table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+                <td>
+                    <a href="@Url.Action("Cafedra", "Main", new {id = item.Id})">Edit</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<button class="main_button" onclick="document.location = '@Url.Action("Cafedra", "Main",new {id = 0})'"> Add Cafedra </button>
+</body>
+</html>

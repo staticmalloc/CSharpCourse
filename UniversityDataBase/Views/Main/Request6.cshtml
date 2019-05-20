@@ -1,0 +1,94 @@
+@model UniversityDataBase.Views.Main.Request6
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Request 6</title>
+</head>
+<body>
+<h3>Request 6</h3>
+
+<div>
+    
+    <h4>By Group Number</h4>
+    @using (Html.BeginForm("Req6_1", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Type1, "Type")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Type1, ViewBag.types as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Group, "The number of group")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Group, ViewBag.groups as SelectList)
+                </div>
+            </div>
+
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+    <h4>By Faculty, course and semester</h4>
+    @using (Html.BeginForm("Req6_2", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Type2, "Type")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Type2, ViewBag.types as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Faculty, "Faculty")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Faculty, ViewBag.faculties as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Course, "Course")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Course, ViewBag.courses as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Semester, "Semester")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Semester, ViewBag.semesters as SelectList)
+                </div>
+            </div>
+
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+    <h4>By Period</h4>
+    @using (Html.BeginForm("Req6_3", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Type3, "Type")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Type3, ViewBag.types as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Begin, "Begin of period")
+                <div class="input_field">
+                    @Html.EditorFor(model => model.Begin)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.End, "End of period")
+                <div class="input_field">
+                    @Html.EditorFor(model => model.End)
+                </div>
+            </div>
+        
+            <input class="main_button" type="submit" value="Select" />
+        </div>
+    }
+</div>
+</body>
+</html>

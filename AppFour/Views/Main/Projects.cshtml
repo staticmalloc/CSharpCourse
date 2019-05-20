@@ -1,0 +1,42 @@
+@model List<AppFour.Entities.Project>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Projects </h3>
+<h5>@ViewBag.WorkerInfo</h5>
+<div>
+    <table class="main_table">
+        <thead>
+        <th>Project Name</th>
+        <th>Award</th>
+        <th>Actions</th>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.ProjectName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Award)
+                </td>
+                <td>
+                    <a href="@Url.Action("Project", "Main", new {id = item.ProjectId})">Edit</a>
+                    <a href="@Url.Action("RemoveProject", "Main", new {id = item.ProjectId})">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<br/>
+<button class="main_button" onclick="document.location = '@Url.Action("Index")'">Back</button>
+</body>
+</html>

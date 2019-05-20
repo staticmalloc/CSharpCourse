@@ -1,0 +1,35 @@
+@model UniversityDataBase.Views.Main.Request7
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Request 7</title>
+</head>
+<body>
+<h3>Request 7</h3>
+
+<div>
+    @using (Html.BeginForm("Req7", "Main", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="input_group">
+                @Html.LabelFor(model => model.Discipline, "Discipline")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Discipline, ViewBag.disciplines as SelectList)
+                </div>
+            </div>
+            <div class="input_group">
+                @Html.LabelFor(model => model.Mark, "Mark")
+                <div class="input_field">
+                    @Html.DropDownListFor(model => model.Mark, ViewBag.marks as SelectList)
+                </div>
+            </div>
+
+            <input class="main_button" type="submit" value="Select"/>
+        </div>
+    }
+
+</div>
+</body>
+</html>

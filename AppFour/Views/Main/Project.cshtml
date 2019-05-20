@@ -1,0 +1,42 @@
+@model AppFour.Entities.Project
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Add Project</h3>
+@using (Html.BeginForm("UpdateProject", "Main", FormMethod.Post))
+{
+    <div class="form">
+        @Html.HiddenFor(model => model.ProjectId)
+        <div class="input_group">
+            @Html.LabelFor(model => model.ProjectName, "Project Name")
+            <div class="input_field">
+                @Html.EditorFor(model => model.ProjectName)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.WorkerId, "Worker ID")
+            <div class="input_field">
+                @Html.EditorFor(model => model.WorkerId)
+            </div>
+        </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Award, "Award")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Award)
+            </div>
+            @* <div class="input_field"> *@
+            @*     @Html.DropDownListFor(model => model.WorkerId, ViewBag.workers as SelectList) *@
+            @* </div> *@
+        </div>
+        <input class="main_button" type="submit" value="Send"/>
+    </div>
+}
+<button class="main_button" onclick="document.location = '@Url.Action("Index")'">Back</button>
+</body>
+</html>

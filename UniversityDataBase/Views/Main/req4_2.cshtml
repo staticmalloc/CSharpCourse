@@ -1,0 +1,34 @@
+@model IList<UniversityDataBase.Models.Cafedra>
+       
+<!DOCTYPE html>
+       
+<html>
+<head>
+    <title>Request 4 By Faculty, course and semester</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>By Faculty, course and semester</h3>
+<div>
+    <table class="main_table">
+        <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <text>Number of cafedras:</text>
+    @Html.DisplayFor(model=>model.Count)
+</div>
+</body>
+</html>

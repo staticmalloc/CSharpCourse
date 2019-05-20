@@ -1,0 +1,28 @@
+@model UniversityDataBase.Models.Cafedra
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add or Update Cafedra</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Add or Update Cafedra</h3>
+@using (Html.BeginForm("UpdateCafedra", "Main", FormMethod.Post))
+{
+    <div class="form">
+        @Html.HiddenFor(model => model.Id)
+        <div class="input_group">
+            @Html.LabelFor(model => model.Name, "Full Name")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Name)
+            </div>
+        </div>
+        <input class="main_button" type="submit" value="Отправить"/>
+    </div>
+}
+<button class="main_button" onclick="document.location = '@Url.Action("AllCafedras")'">Назад</button>
+
+</body>
+</html>

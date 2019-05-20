@@ -1,0 +1,42 @@
+﻿@model IList<UniversityDataBase.Models.Student>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>UniversityDataBase</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+<h3>Actions:</h3>
+<div>
+    
+    <button class="main_button" onclick="document.location = '@Url.Action("AllStudents", "Main")'"> All Students </button> 
+    <button class="main_button" onclick="document.location = '@Url.Action("AllTeachers", "Main")'"> All Teachers </button> 
+    <button class="main_button" onclick="document.location = '@Url.Action("AllCafedras", "Main")'"> All Cafedras </button>
+    <br/>
+    <br/>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request1", "Main")'"> Request  01 </button> 
+    <button class="request_button" onclick="document.location = '@Url.Action("Request2", "Main")'"> Request  02 </button> 
+    <button class="request_button" onclick="document.location = '@Url.Action("Request3", "Main")'"> Request  03 </button>
+    <br/>
+    <br/>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request4", "Main")'"> Request  04 </button> 
+    <button class="request_button" onclick="document.location = '@Url.Action("Request5", "Main")'"> Request  05 </button>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request6", "Main")'"> Request  06 </button>
+    <br/>
+    <br/>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request7", "Main")'"> Request  07 </button>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request8", "Main")'"> Request  08 </button>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request9", "Main")'"> Request  09 </button>
+    <br/>
+    <br/>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request10", "Main")'"> Request 10 </button>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request11", "Main")'"> Request 11 </button>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request12", "Main")'"> Request 12 </button>
+    <br/>
+    <br/>
+    <button class="request_button" onclick="document.location = '@Url.Action("Request13", "Main")'"> Request 13 </button>
+</div>
+</body>
+</html>
