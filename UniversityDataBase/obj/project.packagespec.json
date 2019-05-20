@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
+    "projectUniqueName": "A:\\Documents\\CSharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
     "projectName": "UniversityDataBase",
-    "projectPath": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
-    "outputPath": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\UniversityDataBase\\obj\\",
+    "projectPath": "A:\\Documents\\CSharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
+    "outputPath": "A:\\Documents\\CSharpCourse\\UniversityDataBase\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

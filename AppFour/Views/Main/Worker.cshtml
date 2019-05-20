@@ -20,6 +20,12 @@
                 @Html.EditorFor(model => model.Name)
             </div>
         </div>
+        <div class="input_group">
+            @Html.LabelFor(model => model.Speciality, "Speciality")
+            <div class="input_field">
+                @Html.EditorFor(model => model.Speciality)
+            </div>
+        </div>
 
         </div>
         <input class="main_button" type="submit" value="Send"/>

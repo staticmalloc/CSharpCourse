@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\simonAsus\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\simonAsus\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_SharpCourse.-88353199.00" t="ExcludeRecursive" />
-    <e p="C:\Users\simonAsus\RiderProjects\SharpCourse" t="IncludeFlat">
+    <e p="A:\Documents\CSharpCourse" t="IncludeFlat">
       <e p="AppFour" t="IncludeRecursive">
         <e p="AppFour.csproj" t="IncludeRecursive" />
         <e p="appsettings.Development.json" t="Include" />
@@ -24,6 +22,8 @@
           <e p="20190507032327_Initialize.Designer.cs" t="Include" />
           <e p="20190507032519_Updatecolumn.cs" t="Include" />
           <e p="20190507032519_Updatecolumn.Designer.cs" t="Include" />
+          <e p="20190520083127_SecondBranch.cs" t="Include" />
+          <e p="20190520083127_SecondBranch.Designer.cs" t="Include" />
           <e p="AppDBContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -172,5 +172,7 @@
         </e>
       </e>
     </e>
+    <e p="C:\Users\simonAsus\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\simonAsus\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_SharpCourse.1224149478.00" t="ExcludeRecursive" />
   </component>
 </project>
