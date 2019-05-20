@@ -12537,11 +12537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
+      "projectUniqueName": "A:\\Documents\\CSharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
       "projectName": "UniversityDataBase",
-      "projectPath": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
+      "projectPath": "A:\\Documents\\CSharpCourse\\UniversityDataBase\\UniversityDataBase.csproj",
       "packagesPath": "C:\\Users\\simonAsus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\UniversityDataBase\\obj\\",
+      "outputPath": "A:\\Documents\\CSharpCourse\\UniversityDataBase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

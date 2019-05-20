@@ -14,6 +14,8 @@ namespace AppFour.Entities
         [Required]
         
         public string Name { get; set; }
+        
+        public int Age { get; set; }
         public virtual ICollection<Project> Projects { get; set; }
     }
 }

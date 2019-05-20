@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\AppFour\\AppFour.csproj",
+    "projectUniqueName": "A:\\Documents\\CSharpCourse\\AppFour\\AppFour.csproj",
     "projectName": "AppFour",
-    "projectPath": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\AppFour\\AppFour.csproj",
-    "outputPath": "C:\\Users\\simonAsus\\RiderProjects\\SharpCourse\\AppFour\\obj\\",
+    "projectPath": "A:\\Documents\\CSharpCourse\\AppFour\\AppFour.csproj",
+    "outputPath": "A:\\Documents\\CSharpCourse\\AppFour\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
